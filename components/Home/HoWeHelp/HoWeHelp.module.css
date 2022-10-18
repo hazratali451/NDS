@@ -29,6 +29,7 @@
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     transition: all ease .3s;
+    text-align: center;
 }
 
 .boxWrapper h3 {
@@ -56,6 +57,9 @@
     background-color: var(--color-secondary);
 }
 
+
+
+
 @media (max-width:1199px) {
     .static>div {
         gap: 15px;
@@ -75,10 +79,27 @@
 @media (max-width:991px) {
     .content {
         max-width: unset;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
         font-size: 22px;
         line-height: 30px;
     }
+
+    #HowWeHelp {
+        overflow-x: hidden;
+    }
+
+    .button {
+        margin-top: 0px;
+    }
+
+    .boxWrapper h3 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+
+
 }
 
 @media (max-width:776px) {
@@ -90,5 +111,9 @@
     .content {
         padding-right: 16px;
         padding-left: 16px;
+    }
+
+    #HowWeHelp {
+        background-image: url(../../../public/img/Home/how-we-hel-bg-mobile.png);
     }
 }

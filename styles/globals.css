@@ -72,10 +72,26 @@ ul li {
   line-height: 54px;
 }
 
+
+
+.slick-slider {
+  margin: 0 -15px;
+}
+
+.slick-slide {
+  margin: 30px 12px;
+  max-width: 215px;
+}
+
 @media (max-width:991px) {
   .cmn-btn {
     font-size: 20px;
     line-height: 18px;
+  }
+
+  .slick-slide {
+    margin: 30px 10px;
+    max-width: 147px;
   }
 }
 
