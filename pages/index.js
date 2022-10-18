@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Navbar from '../components/Global/Navbar/Navbar'
 import Banner from '../components/Home/Banner/Banner'
 import ChooseUs from '../components/Home/ChooseUs/ChooseUs'
+import HoWeHelp from '../components/Home/HoWeHelp/HoWeHelp'
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Navbar />
       <Banner />
       <ChooseUs />
+      <HoWeHelp />
     </main>
   )
 }
