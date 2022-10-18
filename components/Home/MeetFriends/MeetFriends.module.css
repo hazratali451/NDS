@@ -1,0 +1,35 @@
+#mission {
+    background-color: var(--bg-secondary);
+}
+
+.container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.content {
+    max-width: 980px;
+    margin-bottom: 40px;
+}
+
+@media (max-width:1199px) {
+    .container {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+
+@media (max-width:767px) {
+    .container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .content {
+        max-width: 980px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
