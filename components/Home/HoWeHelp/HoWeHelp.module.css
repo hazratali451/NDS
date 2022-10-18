@@ -115,5 +115,10 @@
 
     #HowWeHelp {
         background-image: url(../../../public/img/Home/how-we-hel-bg-mobile.png);
+        background-size: cover;
+    }
+
+    .button button {
+        padding: 18.5px 77px;
     }
 }

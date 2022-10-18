@@ -3,6 +3,7 @@ import Navbar from '../components/Global/Navbar/Navbar'
 import Banner from '../components/Home/Banner/Banner'
 import ChooseUs from '../components/Home/ChooseUs/ChooseUs'
 import HoWeHelp from '../components/Home/HoWeHelp/HoWeHelp'
+import OurMission from '../components/Home/OurMission/OurMission'
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Banner />
       <ChooseUs />
       <HoWeHelp />
+      <OurMission />
     </main>
   )
 }

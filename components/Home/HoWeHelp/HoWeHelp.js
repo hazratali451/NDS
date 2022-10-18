@@ -67,7 +67,7 @@ const HoWeHelp = () => {
         responsive: [
 
             {
-                breakpoint: 767,
+                breakpoint: 777,
                 settings: {
                     slidesToShow: 3,
                 },
