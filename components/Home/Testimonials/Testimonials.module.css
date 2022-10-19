@@ -1,5 +1,6 @@
 #Testimonials {
     background-image: url(../../../public/img/Home/testimonials-bg.svg);
+    
 }
 
 .container {
@@ -37,7 +38,7 @@
 .SingleSlide {
     text-align: center;
     background: #FAFAFA;
-    box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.16);
+    box-shadow: -2px 0px 19px rgba(0, 0, 0, 0.16); 
     border-radius: 8px;
     padding: 30px;
     /* Center slide text vertically */
@@ -50,9 +51,51 @@
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: start;
+    align-items: start;
     margin: 15px;
+}
+.sliderContent{
+    position: relative;
+    margin-top: 26px;
+}
+.testimonialsBtn {}
+.testimonialsBtn .prev,
+.testimonialsBtn .next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 11;
+    background: none;
+    outline: none;
+    color: #0062AF;
+    font-size: 25px;
+    
+}
+.testimonialsBtn .prev{
+    left: -50px;
+}
+.testimonialsBtn .next{
+    right: -50px;
+}
+
+@media (max-width: 575.98px){
+    .comment { 
+        font-size: 20px; 
+    }
+    .testimonialsBtn {
+        text-align: center;
+    }
+    .testimonialsBtn .prev,
+    .testimonialsBtn .next{
+        position: unset; 
+        margin: 10px;
+        display: none;
+    }
+    .SingleSlide{
+        margin: 15px 10px;
+        padding: 20px;
+    }
 }
