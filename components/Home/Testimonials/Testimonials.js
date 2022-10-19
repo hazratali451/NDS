@@ -8,19 +8,19 @@ import profile from "/public/img/Home/Profile_Image/profile-1.svg"
 import profile2 from "/public/img/Home/Profile_Image/profile-2.svg"
 import profile3 from "/public/img/Home/Profile_Image/profile-3.svg"
 import { useSwiper } from 'swiper/react';
-import { BsArrowRightCircle,BsArrowLeftCircle } from "react-icons/bs";
+import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
 
 
 import { Pagination, Navigation } from "swiper";
 
 
 
-const Testimonials = () => {   
+const Testimonials = () => {
     const swiperRef = React.useRef(null);
 
     return (
-        <section id={S.Testimonials}> 
-            <div className={`container-fluid ${S.container}`}>
+        <section id={S.Testimonials}>
+            <div className={`container ${S.container}`}>
 
                 <div className={`${S.title} d-flex justify-content-center flex-column`}>
                     <h2 className="title text-center">Our Clients Love Us</h2>
@@ -31,8 +31,8 @@ const Testimonials = () => {
                         ref={swiperRef}
                         slidesPerView={3}
                         slidesPerGroup={3}
-                        loop={false}  
-                        loopFillGroupWithBlank={true} 
+                        loop={false}
+                        loopFillGroupWithBlank={true}
                         // navigation={true} 
                         modules={[Navigation]}
                         className="mySwiper"
@@ -40,12 +40,13 @@ const Testimonials = () => {
                             340: {
                                 slidesPerView: 1.2,
                                 autoplay: true,
+                                slidesPerGroup: 1
                             },
                             768: {
-                                slidesPerView: 2, 
+                                slidesPerView: 2,
                             },
                             1024: {
-                                slidesPerView: 3, 
+                                slidesPerView: 3,
                             },
                         }}
                     >
@@ -119,11 +120,11 @@ const Testimonials = () => {
                                 </div>
                             </div>
                         </SwiperSlide>
-                        
+
                     </Swiper>
                     <div className={S.testimonialsBtn}>
-                        <button className={S.prev} onClick={() => swiperRef.current.swiper.slidePrev()} ><BsArrowLeftCircle/></button>
-                        <button className={S.next} onClick={() => swiperRef.current.swiper.slideNext()}><BsArrowRightCircle/></button>
+                        <button className={S.prev} onClick={() => swiperRef.current.swiper.slidePrev()} ><BsArrowLeftCircle /></button>
+                        <button className={S.next} onClick={() => swiperRef.current.swiper.slideNext()}><BsArrowRightCircle /></button>
                     </div>
                 </div>
             </div>
