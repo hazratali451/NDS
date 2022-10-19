@@ -5,6 +5,7 @@ import ChooseUs from '../components/Home/ChooseUs/ChooseUs'
 import HoWeHelp from '../components/Home/HoWeHelp/HoWeHelp'
 import MeetFriends from '../components/Home/MeetFriends/MeetFriends'
 import OurMission from '../components/Home/OurMission/OurMission'
+import Testimonials from '../components/Home/Testimonials/Testimonials'
 
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <HoWeHelp />
       <OurMission />
       <MeetFriends />
+      <Testimonials />
     </main>
   )
 }

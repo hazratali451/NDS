@@ -53,16 +53,13 @@ const HoWeHelp = () => {
 
     const settings = {
         dots: false,
-        infinite: true,
-        speed: 1500,
+        infinite: false,
         slidesToShow: 4,
         slidesToScroll: 1,
-        cssEase: "linear",
-        autoplay: true,
-        autoplaySpeed: 1500,
+        autoplay: false,
         arrows: false,
-        swipeToSlide: false,
-        touchMove: false,
+        swipeToSlide: true,
+        touchMove: true,
         pauseOnHover: false,
         responsive: [
 
@@ -73,7 +70,7 @@ const HoWeHelp = () => {
                 },
             },
             {
-                breakpoint: 400,
+                breakpoint: 500,
                 settings: {
                     slidesToShow: 2,
                 },
