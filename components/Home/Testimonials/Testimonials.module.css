@@ -1,11 +1,11 @@
 #Testimonials {
     background-image: url(../../../public/img/Home/testimonials-bg.svg);
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .container {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 50px 0;
     /*  max-width: 1440px; */
 }
 
@@ -103,5 +103,31 @@
     .SingleSlide {
         margin: 15px 10px;
         padding: 20px;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1564px) {
+    .container {
+        padding: 120px 50px;
+    }
+}
+
+@media (max-width:1199px) {
+    .container {
+        padding: 70px 30px;
+    }
+}
+
+@media (max-width:767px) {
+    .container {
+        padding: 50px 0px;
+    }
+
+    #Testimonials {
+        background-image: url(../../../public/img/Home/testimonials-mobile.svg);
+    }
+
+    .sliderContent {
+        margin-top: 20px;
     }
 }

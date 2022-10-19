@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import S from './Testimonials.module.css'
 import underTitle from "/public/img/under-title.svg"
 import underTitleMobile from "/public/img/under-title-mobile.svg"
@@ -18,13 +18,23 @@ import { Pagination, Navigation } from "swiper";
 const Testimonials = () => {
     const swiperRef = React.useRef(null);
 
+
+
+    const [deviceWidth, setDeviceWidth] = useState()
+
+
+    useEffect(() => {
+        var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        setDeviceWidth(width)
+    }, [])
+
     return (
         <section id={S.Testimonials}>
             <div className={`container ${S.container}`}>
 
                 <div className={`${S.title} d-flex justify-content-center flex-column`}>
                     <h2 className="title text-center">Our Clients Love Us</h2>
-                    <Image src={underTitle} alt="" />
+                    <Image src={deviceWidth && deviceWidth < "767" ? underTitleMobile : underTitle} alt="" />
                 </div>
                 <div className={S.sliderContent}>
                     <Swiper
