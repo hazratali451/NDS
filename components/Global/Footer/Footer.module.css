@@ -1,0 +1,134 @@
+#footer {
+    background-image: url("../../../public/img/Footer.svg");
+}
+
+.first {
+    margin-right: 124px;
+}
+
+.second {
+    margin-right: 124px;
+}
+
+.third {
+    margin-right: 124px;
+}
+
+
+@media (min-width:1550px) {
+    .container {
+        max-width: 1440px;
+        padding-top: 45px;
+    }
+}
+
+.container {
+    padding-top: 45px;
+    padding-bottom: 20px;
+}
+
+.address,
+.phone {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--color-title);
+}
+
+.address {
+    margin-bottom: 5px;
+}
+
+.phone {
+    margin-bottom: 50px;
+}
+
+.mainAddress {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: #1D1E03;
+}
+
+.phone a {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: #1D1E03
+}
+
+.logo {
+    margin-bottom: 25px;
+}
+
+.quickTitle {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--color-title);
+    margin-bottom: 30px;
+}
+
+#footer ul li a {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+    color: #1D1E03;
+}
+
+#footer ul li:hover {
+    text-decoration: underline;
+}
+
+.newsTitle {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--color-title);
+    margin-bottom: 5px;
+}
+
+.newsDesc {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: #1D1E03;
+    margin-bottom: 20px;
+}
+
+.form {
+    padding: 12px 20px;
+    background: #DEF0FF;
+    border: 1px solid rgba(75, 75, 75, 0.2);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form input {
+    outline: none;
+    border: none;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    background: #DEF0FF;
+    padding-left: 10px;
+    color: black;
+}
+
+.form input::placeholder {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #4B4B4B;
+}
+
+#footer button {
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    margin-bottom: 30px;
+}
+
+.socialBtns a {
+    margin-right: 11px;
+}

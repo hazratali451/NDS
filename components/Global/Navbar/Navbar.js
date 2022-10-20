@@ -18,7 +18,7 @@ const Navbar = () => {
     const handleShow = () => setShow(true);
 
     return (
-        <nav id='navbar'>
+        <div id='navbar'>
             <div className={`container ${Styles.container}`}>
                 <div className="d-flex justify-content-between align-items-center">
                     <div className={Styles.logo}>
@@ -54,7 +54,7 @@ const Navbar = () => {
                 </div>
             </div>
             <MobileMenu show={show} handleShow={handleShow} setShow={setShow} />
-        </nav>
+        </div>
     );
 };
 
