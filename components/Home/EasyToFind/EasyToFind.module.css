@@ -1,0 +1,50 @@
+#easyToFind {
+    background-image: url(../../../public/img/Home/dog-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding-top: 90px;
+}
+
+#easyToFind p {
+    margin-bottom: 40px;
+}
+
+#easyToFind span {
+    width: 100% !important;
+}
+
+
+.pointer {
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+}
+
+@media (max-width:991px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #easyToFind p {
+        padding: 0 16px;
+    }
+
+    #easyToFind p {
+        margin-bottom: 30px;
+    }
+
+    #easyToFind {
+        background-size: 52px 52px;
+        padding-top: 0px;
+        background-position: 100% 20%;
+    }
+
+
+}
+
+.wrapper span {
+    display: block !important;
+}

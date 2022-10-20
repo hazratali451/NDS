@@ -7,7 +7,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import profile from "/public/img/Home/Profile_Image/profile-1.svg"
 import profile2 from "/public/img/Home/Profile_Image/profile-2.svg"
 import profile3 from "/public/img/Home/Profile_Image/profile-3.svg"
-import { useSwiper } from 'swiper/react';
 import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
 
 
