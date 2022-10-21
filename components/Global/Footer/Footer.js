@@ -7,8 +7,59 @@ import emailicon from "/public/img/Home/email-icon.svg"
 import facebook from "/public/img/Home/icons/facebook.svg"
 import instagram from "/public/img/Home/icons/instagram.svg"
 import twitter from "/public/img/Home/icons/twitter.svg"
+import Accordion from 'react-bootstrap/Accordion';
+
 
 const Footer = () => {
+
+    const footerMenu = {
+        quickLinks: [
+            {
+                title: "Home",
+                link: "/"
+            },
+            {
+                title: "About Us",
+                link: "/"
+            },
+            {
+                title: "Services",
+                link: "/"
+            },
+            {
+                title: "Resources",
+                link: "/"
+            },
+            {
+                title: "Testimonial",
+                link: "/"
+            }
+        ],
+        helpAndSupport: [
+            {
+                title: "Help Center",
+                link: "/"
+            },
+            {
+                title: "Privacy Policy",
+                link: "/"
+            },
+            {
+                title: "FAQ",
+                link: "/"
+            },
+            {
+                title: "Terms & Conditions",
+                link: "/"
+            },
+            {
+                title: "Contact",
+                link: "/"
+            }
+        ]
+    }
+
+
     return (
         <div id={S.footer}>
             <div className={`container px-md-0 ${S.container}`}>
@@ -16,6 +67,30 @@ const Footer = () => {
                     <div className={S.first}>
                         <div className={S.logo}>
                             <Image src={logo} alt="Logo" />
+                            <div className={`${S.accordionWrapper} d-lg-none`}>
+                                <Accordion defaultActiveKey="0">
+                                    <Accordion.Item className={S.accItem} eventKey="0">
+                                        <Accordion.Header className={`${S.accTitle}`}>Quick Link</Accordion.Header>
+                                        <Accordion.Body className={S.accbody}>
+                                            <ul className='m-0 p-0'>
+                                                {
+                                                    footerMenu.quickLinks.map((item, index) => <li key={index}><Link href={item.link}>{item.title}</Link></li>)
+                                                }
+                                            </ul>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item className={S.accItem} eventKey="1">
+                                        <Accordion.Header className={`${S.accTitle}`}>Help & Support</Accordion.Header>
+                                        <Accordion.Body className={S.accbody}>
+                                            <ul className='m-0 p-0'>
+                                                {
+                                                    footerMenu.helpAndSupport.map((item, index) => <li key={index}><Link href={item.link}>{item.title}</Link></li>)
+                                                }
+                                            </ul>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                </Accordion>
+                            </div>
                         </div>
                         <div className={S.address1}>
                             <div className={S.address}>Address:</div>
@@ -32,21 +107,17 @@ const Footer = () => {
                     <div className={`${S.second} d-none d-lg-block`}>
                         <h3 className={S.quickTitle}>Quick Link</h3>
                         <ul className='m-0 p-0'>
-                            <li><Link href="/">Home</Link></li>
-                            <li><Link href="/">About Us</Link></li>
-                            <li><Link href="/">Services</Link></li>
-                            <li><Link href="/">Resources</Link></li>
-                            <li><Link href="/">Testimonial</Link></li>
+                            {
+                                footerMenu.quickLinks.map((item, index) => <li key={index}><Link href={item.link}>{item.title}</Link></li>)
+                            }
                         </ul>
                     </div>
                     <div className={`${S.third} d-none d-lg-block`}>
                         <h3 className={S.quickTitle}>Help & Support</h3>
                         <ul className='m-0 p-0'>
-                            <li><Link href="/">Help Center</Link></li>
-                            <li><Link href="/">Privacy Policy</Link></li>
-                            <li><Link href="/">FAQ</Link></li>
-                            <li><Link href="/">Terms & Conditions</Link></li>
-                            <li><Link href="/">Contact</Link></li>
+                            {
+                                footerMenu.helpAndSupport.map((item, index) => <li key={index}><Link href={item.link}>{item.title}</Link></li>)
+                            }
                         </ul>
                     </div>
                     <div className={S.fourth}>
