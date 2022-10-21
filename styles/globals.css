@@ -60,7 +60,7 @@ ul li {
   border-radius: 8px;
 }
 
-#navbar .active a {
+.active a {
   color: var(--color-title) !important;
 }
 
