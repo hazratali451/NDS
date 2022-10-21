@@ -11,8 +11,8 @@ import twitter from "/public/img/Home/icons/twitter.svg"
 const Footer = () => {
     return (
         <div id={S.footer}>
-            <div className={`container ${S.container}`}>
-                <div className="d-flex align-items-center">
+            <div className={`container px-md-0 ${S.container}`}>
+                <div className="d-lg-flex">
                     <div className={S.first}>
                         <div className={S.logo}>
                             <Image src={logo} alt="Logo" />
@@ -29,7 +29,7 @@ const Footer = () => {
                             <div className={S.phone}>Phone number: <a href="tel:+(726)888-9024">+(726) 888-9024</a> </div>
                         </div>
                     </div>
-                    <div className={S.second}>
+                    <div className={`${S.second} d-none d-lg-block`}>
                         <h3 className={S.quickTitle}>Quick Link</h3>
                         <ul className='m-0 p-0'>
                             <li><Link href="/">Home</Link></li>
@@ -39,7 +39,7 @@ const Footer = () => {
                             <li><Link href="/">Testimonial</Link></li>
                         </ul>
                     </div>
-                    <div className={S.third}>
+                    <div className={`${S.third} d-none d-lg-block`}>
                         <h3 className={S.quickTitle}>Help & Support</h3>
                         <ul className='m-0 p-0'>
                             <li><Link href="/">Help Center</Link></li>
@@ -56,7 +56,7 @@ const Footer = () => {
                         <div className={S.newsDesc}>Let`s us keep you inform about special promotions, office events and more</div>
                         <form action="">
                             <div className={`${S.form} d-flex align-items-center`}>
-                                <Image src={emailicon} alt='email icon' /> <input type="text" placeholder='Enter your email address' />
+                                <Image height={21.67} width={17.33} src={emailicon} alt='email icon' /> <input type="text" placeholder='Enter your email address' />
                             </div>
                             <button className="cmn-btn">
                                 Subscribe
@@ -75,6 +75,8 @@ const Footer = () => {
                         </form>
                     </div>
                 </div>
+                <hr />
+                <p className={S.copyrightText}>Copyright © 2021 Pawscare by animalhospital. All Rights Reserved.</p>
             </div>
         </div>
     );
