@@ -68,7 +68,7 @@ const Footer = () => {
                         <div className={S.logo}>
                             <Image src={logo} alt="Logo" />
                             <div className={`${S.accordionWrapper} d-lg-none`}>
-                                <Accordion defaultActiveKey="0">
+                                <Accordion>
                                     <Accordion.Item className={S.accItem} eventKey="0">
                                         <Accordion.Header className={`${S.accTitle}`}>Quick Link</Accordion.Header>
                                         <Accordion.Body className={S.accbody}>
