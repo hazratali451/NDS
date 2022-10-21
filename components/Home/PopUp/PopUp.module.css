@@ -1,0 +1,184 @@
+.popup {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.leftside {
+    background-image: url(../../../public/img/popup-bg.svg);
+    padding: 50px 137px 490px 50px;
+    background-repeat: no-repeat;
+    flex-basis: 50%;
+    background-size: cover;
+}
+
+.rightSide {
+    flex-basis: 50%;
+    padding: 50px;
+}
+
+.modalTitle {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.modalContent {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+
+.formTitle {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: #0062AF;
+}
+
+.row {
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.form label {
+    display: block;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: 6px;
+}
+
+.form input {
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #121212;
+    padding: 11px 20px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+    outline: none;
+}
+
+.form select {
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #B2B2B2;
+    padding: 11px 20px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+    outline: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='darkblue' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 1em;
+}
+
+.active_select {
+    color: #121212 !important;
+}
+
+
+
+.others {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #121212;
+}
+
+.form input:focus {
+    border: 1px solid #4B4B4B;
+}
+
+.form input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #B2B2B2;
+}
+
+
+.form textarea {
+    padding: 12px;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 23px;
+}
+
+.form textarea:focus {
+    border: 1px solid #4B4B4B;
+}
+
+.form button {
+    padding: 13px 71px;
+}
+
+
+@media (max-width:1199px) {
+    .leftside {
+        padding: 50px auto auto 50px;
+    }
+
+    .modalTitle {
+        font-size: 30px;
+        line-height: 35px;
+        color: #FFFFFF;
+    }
+
+    .modalContent {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+}
+
+@media (max-width:1199px) {
+    .leftside {
+        padding: 50px;
+        flex-basis: 40%;
+    }
+
+    .rightSide {
+        padding: 50px;
+        flex-basis: 60%;
+    }
+}
+
+@media (max-width:991px) {
+    .rightSide {
+        padding: 30px 50px 30px 50px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:676px) {
+    .formTitle {
+        font-size: 20px;
+    }
+
+    .row {
+        margin-bottom: 10px;
+        gap: 10px;
+    }
+}

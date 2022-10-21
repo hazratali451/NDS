@@ -11,7 +11,7 @@ import { AiOutlineCloseCircle } from 'react-icons/ai';
 
 
 
-const Navbar = () => {
+const Navbar = ({ setModalShow }) => {
     const router = useRouter();
     const [show, setShow] = useState(false);
     const handleShow = () => setShow(true);
@@ -58,7 +58,7 @@ const Navbar = () => {
                         </ul>
                         <div className={`${Styles.buttons} d-flex align-items-center`}>
                             <button><IoIosCall className='me-1' />726-888-9024</button>
-                            <button>Book Now</button>
+                            <button onClick={() => setModalShow(true)}>Book Now</button>
                         </div>
                     </div>
                     <div className={`${Styles.toogleBtn} d-lg-none`}>
@@ -68,12 +68,12 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <MobileMenu show={show} handleShow={handleShow} setShow={setShow} menus={menus} router={router} />
+            <MobileMenu show={show} handleShow={handleShow} setModalShow={setModalShow} setShow={setShow} menus={menus} router={router} />
         </div>
     );
 };
 
-function MobileMenu({ show, setShow, menus, router }) {
+function MobileMenu({ show, setShow, menus, router, setModalShow }) {
 
 
     const handleClose = () => setShow(false);
@@ -104,7 +104,7 @@ function MobileMenu({ show, setShow, menus, router }) {
                             </ul>
                             <div className={`${Styles.buttons} ms-4 mt-3 d-flex align-items-center`}>
                                 <button><IoIosCall className='me-1' />726-888-9024</button>
-                                <button>Book Now</button>
+                                <button onClick={() => setModalShow(true)}>Book Now</button>
                             </div>
                         </div>
                     </div>
