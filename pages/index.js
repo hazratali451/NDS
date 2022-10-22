@@ -32,7 +32,7 @@ export default function Home() {
         <Navbar setModalShow={setModalShow} />
       </nav>
       <main>
-        <Banner />
+        <Banner setModalShow={setModalShow} />
         <ChooseUs />
         <HoWeHelp />
         <OurMission />

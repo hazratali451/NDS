@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
 import Banner from '../components/AboutUs/Banner/Banner';
+import CoreValue from '../components/AboutUs/CoreValue/CoreValue';
 import Team from '../components/AboutUs/Team/Team';
 import Footer from '../components/Global/Footer/Footer';
 import Navbar from '../components/Global/Navbar/Navbar';
@@ -22,6 +23,7 @@ const AboutUs = () => {
                 <Navbar setModalShow={setModalShow} />
                 <Banner />
                 <Team />
+                <CoreValue />
             </nav>
             <main>
 
