@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import React from 'react';
-import Banner from '../components/AboutUs/Banner';
+import Banner from '../components/AboutUs/Banner/Banner';
+import Team from '../components/AboutUs/Team/Team';
 import Footer from '../components/Global/Footer/Footer';
 import Navbar from '../components/Global/Navbar/Navbar';
-import ChooseUs from '../components/Home/ChooseUs/ChooseUs';
 import PopUp from '../components/Home/PopUp/PopUp';
 
 const AboutUs = () => {
@@ -21,6 +21,7 @@ const AboutUs = () => {
             <nav>
                 <Navbar setModalShow={setModalShow} />
                 <Banner />
+                <Team />
             </nav>
             <main>
 

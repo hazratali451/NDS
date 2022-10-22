@@ -31,7 +31,7 @@ const Banner = () => {
                 <div className={`container ${S.container}`}>
                     <div className={`row align-items-center ${S.row}`}>
                         <div className="col col-xl-6 col-xxl-7">
-                            <div className='d-flex flex-column justify-content-center align-items-center'>
+                            <div className={`d-flex flex-column justify-content-center ${S.jhsg}`}>
                                 <h2 className={`title ${S.title}`}>Hi, Let Us Introduce Ourselves</h2>
                                 <div><Image className={S.under_title} src={deviceWidth && deviceWidth < "767" ? underTitleMobile : underTitle} alt="" /></div>
                             </div>

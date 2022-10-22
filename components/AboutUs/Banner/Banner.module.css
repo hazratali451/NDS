@@ -1,5 +1,5 @@
 .brcm {
-    background-image: url(../../public/img/About-us/banner-bg.svg);
+    background-image: url(../../../public/img/About-us/banner-bg.svg);
     padding: 53px 0;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .main {
-    background-image: url(../../public/img/About-us/bg1.svg);
+    background-image: url(../../../public/img/About-us/bg1.svg);
     background-repeat: no-repeat;
 }
 
@@ -64,6 +64,10 @@
 @media (max-width:1199px) {
     .row {
         flex-direction: column-reverse;
+    }
+
+    .jhsg {
+        text-align: center;
     }
 }
 

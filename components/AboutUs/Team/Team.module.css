@@ -1,0 +1,154 @@
+#team {
+    background-image: url(../../../public/img/About-us/bg-2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    padding: 120px 0;
+}
+
+@media (min-width: 1550px) {
+    .contianer {
+        max-width: 1438px;
+    }
+}
+
+.title {
+    margin-bottom: 40px;
+}
+
+.wrapper {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+}
+
+.singleItem {
+    background-color: #FAFAFA;
+    transition: 1s all ease;
+    box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+}
+
+
+.singleItem .member_image {
+    padding: 30px;
+}
+
+.singleItem img {
+    border-radius: 10px;
+}
+
+.main_content {
+    padding: 30px 30px 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 276px;
+}
+
+.singleItem :hover {
+    background-color: #EEC9A5;
+}
+
+.member_image span {
+    display: block !important;
+}
+
+.member_name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    color: #0062AF;
+    margin-bottom: 10px;
+}
+
+.memner_degination {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #0062AF;
+    margin-bottom: 10px;
+}
+
+.member_deatils {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.leanr_more {
+    background: none;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    display: inline;
+    color: #0062AF;
+
+}
+
+.singleItem :hover .leanr_more,
+.singleItem :hover .member_deatils,
+.singleItem :hover .memner_degination,
+.singleItem :hover .member_name {
+    color: #000000;
+}
+
+@media (max-width:1199px) {
+    .container {
+        padding: 50px 0;
+    }
+
+    .wrapper {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 30px;
+    }
+
+}
+
+@media (max-width:575px) {
+    .wrapper {
+        margin-top: 20px;
+        padding: 0 16px;
+    }
+
+    .title {
+        margin-bottom: 20px;
+    }
+
+    .main_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0px 15px 15px;
+    }
+
+    .member_image {
+        padding: 15px !important;
+    }
+
+    .member_name {
+        margin-bottom: 0;
+    }
+
+    .memner_degination {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .member_deatils {
+        font-size: 16px;
+        line-height: unset;
+    }
+}

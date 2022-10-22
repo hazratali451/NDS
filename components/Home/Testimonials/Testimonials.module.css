@@ -116,6 +116,10 @@
     .container {
         padding: 70px 30px;
     }
+
+    .title {
+        text-align: center;
+    }
 }
 
 @media (max-width:767px) {

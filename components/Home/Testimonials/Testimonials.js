@@ -8,14 +8,11 @@ import profile from "/public/img/Home/Profile_Image/profile-1.svg"
 import profile2 from "/public/img/Home/Profile_Image/profile-2.svg"
 import profile3 from "/public/img/Home/Profile_Image/profile-3.svg"
 import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
-
-
 import { Navigation } from "swiper";
-
-
 
 const Testimonials = () => {
     const swiperRef = React.useRef(null);
+
     const [deviceWidth, setDeviceWidth] = useState()
 
     useEffect(() => {
