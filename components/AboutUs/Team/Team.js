@@ -85,7 +85,7 @@ const Team = () => {
                                 <Image src={member3} alt={"Jane Cooper"} />
                             </div>
                             <div className={S.main_content}>
-                                <h5 className={S.member_name}>uy Hawkins</h5>
+                                <h5 className={S.member_name}>Guy Hawkins</h5>
                                 <span className={S.memner_degination}>Veterinarian.</span>
 
                                 {

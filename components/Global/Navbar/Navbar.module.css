@@ -35,6 +35,9 @@
     color: var(--color-white);
 }
 
+.logo {
+    cursor: pointer;
+}
 
 @media (max-width:1199px) {
     .ul {

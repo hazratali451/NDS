@@ -1,14 +1,13 @@
 import Head from 'next/head';
-import React from 'react';
-import Banner from '../components/AboutUs/Banner/Banner';
-import CoreValue from '../components/AboutUs/CoreValue/CoreValue';
-import Team from '../components/AboutUs/Team/Team';
+import React, { useState } from 'react';
 import Footer from '../components/Global/Footer/Footer';
 import Navbar from '../components/Global/Navbar/Navbar';
 import PopUp from '../components/Home/PopUp/PopUp';
+import Article from '../components/Resources/Article/Article';
+import Banner from '../components/Resources/Banner/Banner';
 
-const AboutUs = () => {
-    const [modalShow, setModalShow] = React.useState(false);
+const resources = () => {
+    const [modalShow, setModalShow] = useState(false);
     return (
         <>
             <PopUp
@@ -16,16 +15,14 @@ const AboutUs = () => {
                 onHide={() => setModalShow(false)}
             />
             <Head>
-                <title>About Us -  NDS Animal Hospital</title>
+                <title>Resources -  NDS Animal Hospital</title>
             </Head>
             <nav>
                 <Navbar setModalShow={setModalShow} />
-                <Banner />
-                <Team />
-                <CoreValue />
             </nav>
             <main>
-
+                <Banner />
+                <Article />
             </main>
             <footer>
                 <Footer />
@@ -34,4 +31,4 @@ const AboutUs = () => {
     );
 };
 
-export default AboutUs;
+export default resources;
