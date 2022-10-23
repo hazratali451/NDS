@@ -19,7 +19,7 @@ const Banner = () => {
         <header id={S.banner}>
             <div className={S.brcm}>
                 <div className="container text-center">
-                    <h3 className={S.brc_title}>About Us</h3>
+                    <h3 className={S.brc_title}>Resources</h3>
                     <ul className='d-flex m-0 p-0 justify-content-center align-items-center'>
                         <li><Link href={"/"}>Home</Link> </li>
                         <span>/</span>

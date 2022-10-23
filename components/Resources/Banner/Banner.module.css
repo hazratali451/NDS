@@ -99,3 +99,33 @@
         align-items: center;
     }
 }
+
+@media (max-width:767px) {
+    .brcm {
+        padding: 20px 0;
+    }
+
+    .brc_title {
+        font-size: 34px;
+        line-height: 25px;
+        margin-bottom: 3px;
+    }
+
+    .brcm ul li:first-child a {
+        font-size: 14px;
+    }
+
+
+    .brcm ul li:last-child {
+        font-size: 14px;
+    }
+
+    .brcm ul span {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 0 3px;
+    }
+}

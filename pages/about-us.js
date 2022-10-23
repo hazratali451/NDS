@@ -20,12 +20,11 @@ const AboutUs = () => {
             </Head>
             <nav>
                 <Navbar setModalShow={setModalShow} />
+            </nav>
+            <main>
                 <Banner />
                 <Team />
                 <CoreValue />
-            </nav>
-            <main>
-
             </main>
             <footer>
                 <Footer />

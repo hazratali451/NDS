@@ -2,8 +2,8 @@ import Head from 'next/head';
 import React, { useState } from 'react';
 import Footer from '../components/Global/Footer/Footer';
 import Navbar from '../components/Global/Navbar/Navbar';
+import Article from '../components/Global/RecentArticle/Article';
 import PopUp from '../components/Home/PopUp/PopUp';
-import Article from '../components/Resources/Article/Article';
 import Banner from '../components/Resources/Banner/Banner';
 
 const resources = () => {
