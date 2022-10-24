@@ -6,7 +6,7 @@ import Article from '../components/Global/RecentArticle/Article';
 import PopUp from '../components/Home/PopUp/PopUp';
 import Banner from '../components/Resources/Banner/Banner';
 
-const resources = () => {
+const Resources = () => {
     const [modalShow, setModalShow] = useState(false);
     return (
         <>
@@ -31,4 +31,4 @@ const resources = () => {
     );
 };
 
-export default resources;
+export default Resources;
