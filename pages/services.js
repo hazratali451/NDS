@@ -5,6 +5,7 @@ import Navbar from '../components/Global/Navbar/Navbar';
 import PopUp from '../components/Home/PopUp/PopUp';
 import Article from '../components/Global/RecentArticle/Article';
 import Header from '../components/Services/Header/Header';
+import HowWeHelp from '../components/Services/HowWeHelp/HowWeHelp';
 
 const Services = () => {
     const [modalShow, setModalShow] = React.useState(false);
@@ -22,6 +23,7 @@ const Services = () => {
             </nav>
             <main>
                 <Header />
+                <HowWeHelp />
                 <Article />
             </main>
             <footer>
