@@ -65,6 +65,10 @@
         width: 71px;
     }
 
+    #navbar {
+        padding: 1px 0;
+    }
+
 }
 
 .toogleBtn button {

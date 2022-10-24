@@ -40,7 +40,7 @@ const Navbar = ({ setModalShow }) => {
 
 
     return (
-        <div id='navbar'>
+        <nav className='sticky-top bg-white' id={Styles.navbar}>
             <div className={`container ${Styles.container}`}>
                 <div className="d-flex justify-content-between align-items-center">
                     <div className={Styles.logo}>
@@ -69,7 +69,7 @@ const Navbar = ({ setModalShow }) => {
                 </div>
             </div>
             <MobileMenu show={show} handleShow={handleShow} setModalShow={setModalShow} setShow={setShow} menus={menus} router={router} />
-        </div>
+        </nav>
     );
 };
 

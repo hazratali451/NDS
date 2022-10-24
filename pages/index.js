@@ -28,9 +28,7 @@ export default function Home() {
         <title>Home -  NDS Animal Hospital</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav>
-        <Navbar setModalShow={setModalShow} />
-      </nav>
+      <Navbar setModalShow={setModalShow} />
       <main>
         <Banner setModalShow={setModalShow} />
         <ChooseUs />
