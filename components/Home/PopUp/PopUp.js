@@ -5,7 +5,8 @@ import S from "./PopUp.module.css"
 
 const PopUp = (props) => {
 
-    const [change, setChange] = useState(false)
+    const [reasorToVisit, setReasorToVisit] = useState(false)
+    const [dateAndTime, setDateAndTime] = useState(false)
 
     return (
         <Modal
@@ -62,7 +63,7 @@ const PopUp = (props) => {
                                 <div className={`row  ${S.row}`}>
                                     <div className="col m-0 p-0">
                                         <label>Reason for the visit</label>
-                                        <select onChange={() => setChange(true)} className={change && S.active_select}>
+                                        <select onChange={() => setReasorToVisit(true)} className={reasorToVisit && S.active_select}>
                                             <option className={`${S.others} d-none`}>Select Reason</option>
                                             <option className={S.others}>Option 1</option>
                                             <option className={S.others}>Option 2</option>
@@ -71,7 +72,7 @@ const PopUp = (props) => {
                                     </div>
                                     <div className="col m-0 p-0">
                                         <label>Date and Time</label>
-                                        <input min={new Date().toISOString().slice(0, 16)} type="datetime-local" placeholder='Date And Time' />
+                                        <input onChange={() => setDateAndTime(true)} className={`${S.date_and_time} ${dateAndTime && S.active_select} `} min={new Date().toISOString().slice(0, 16)} type="datetime-local" defaultValue="2022-10-10T09:59" />
                                     </div>
                                 </div>
 

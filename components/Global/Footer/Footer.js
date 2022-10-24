@@ -72,7 +72,7 @@ const Footer = () => {
                                     <Accordion.Item className={S.accItem} eventKey="0">
                                         <Accordion.Header className={`${S.accTitle}`}>Quick Link</Accordion.Header>
                                         <Accordion.Body className={S.accbody}>
-                                            <ul className='m-0 p-0'>
+                                            <ul className='mb-4 p-0'>
                                                 {
                                                     footerMenu.quickLinks.map((item, index) => <li key={index}><Link href={item.link}>{item.title}</Link></li>)
                                                 }
