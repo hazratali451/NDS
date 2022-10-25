@@ -24,7 +24,6 @@ const Services = () => {
             <main>
                 <Header />
                 <HowWeHelp />
-                <Article />
             </main>
             <footer>
                 <Footer />

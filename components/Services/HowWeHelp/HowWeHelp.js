@@ -17,7 +17,7 @@ import { Navigation } from "swiper";
 
 const HowWeHelp = () => {
     const swiperRef = React.useRef(null);
-
+    const swiperRef2 = React.useRef(null);
     const [deviceWidth, setDeviceWidth] = useState()
 
 
@@ -29,42 +29,42 @@ const HowWeHelp = () => {
     const data = [
         {
             title: "Dental",
-            icon: icon1,
+            icon: icon8,
             description: "Dental disease is one of the most common health problems in dogs and cats. It's important to keep your pet's teeth clean and healthy to prevent gum disease, tooth loss, and other health problems. Our veterinarians can help you create a pet dental plan."
         },
         {
             title: "Surgery",
-            icon: icon2,
+            icon: icon7,
             description: "Sometimes, pet surgery is necessary to treat an illness or injury. Our team of veterinarians is experienced in performing a variety of pet surgeries. We'll work with you to ensure that your pet has a successful surgery and recovery."
         },
         {
             title: "Vaccines",
-            icon: icon3,
+            icon: icon6,
             description: "Vaccines help protect your pet from a variety of diseases. We offer a variety of vaccines at our vet center, including rabies, distemper, and Bordetella."
         },
         {
             title: "Bloodwork",
-            icon: icon4,
+            icon: icon5,
             description: "Bloodwork is an important part of pet wellness care. It can help our veterinarians identify health problems early. We offer bloodwork services at our vet center."
         },
         {
             title: "Wellness Care and Check-Ups",
-            icon: icon5,
+            icon: icon4,
             description: "We offer wellness care to help keep your pet healthy. Our veterinarians will work with you to create a custom wellness plan for your pet. We also offer annual check-ups to help catch any health problems early."
         },
         {
             title: "Spaying or Neutering Your Pet",
-            icon: icon6,
+            icon: icon3,
             description: "Spaying or neutering your pet can help it live a longer, healthier life. It can also help reduce the number of unwanted animals in shelters. Our veterinarians can perform spay and neuter surgery at our vet center."
         },
         {
             title: "Microchipping",
-            icon: icon7,
+            icon: icon2,
             description: "Microchipping is a safe and permanent way to identify your pet. If your pet is lost, a microchip can help it get back home to you."
         },
         {
             title: "Euthanasia ",
-            icon: icon8,
+            icon: icon1,
             description: "Saying goodbye to a beloved pet is never easy. Our team is here to help you through this difficult time."
         },
     ]
@@ -72,43 +72,43 @@ const HowWeHelp = () => {
     const data2 = [
         {
             title: "Wellness Care and Check-Ups",
-            icon: icon5,
+            icon: icon4,
             description: "We offer wellness care to help keep your pet healthy. Our veterinarians will work with you to create a custom wellness plan for your pet. We also offer annual check-ups to help catch any health problems early."
         },
         {
             title: "Spaying or Neutering Your Pet",
-            icon: icon6,
+            icon: icon3,
             description: "Spaying or neutering your pet can help it live a longer, healthier life. It can also help reduce the number of unwanted animals in shelters. Our veterinarians can perform spay and neuter surgery at our vet center."
         },
         {
             title: "Microchipping",
-            icon: icon7,
+            icon: icon2,
             description: "Microchipping is a safe and permanent way to identify your pet. If your pet is lost, a microchip can help it get back home to you."
         },
         {
             title: "Euthanasia ",
-            icon: icon8,
+            icon: icon1,
             description: "Saying goodbye to a beloved pet is never easy. Our team is here to help you through this difficult time."
         }, {
             title: "Dental",
-            icon: icon1,
+            icon: icon8,
             description: "Dental disease is one of the most common health problems in dogs and cats. It's important to keep your pet's teeth clean and healthy to prevent gum disease, tooth loss, and other health problems. Our veterinarians can help you create a pet dental plan."
         },
         {
             title: "Surgery",
-            icon: icon2,
+            icon: icon7,
             description: "Sometimes, pet surgery is necessary to treat an illness or injury. Our team of veterinarians is experienced in performing a variety of pet surgeries. We'll work with you to ensure that your pet has a successful surgery and recovery."
         },
         {
             title: "Vaccines",
-            icon: icon3,
+            icon: icon6,
             description: "Vaccines help protect your pet from a variety of diseases. We offer a variety of vaccines at our vet center, including rabies, distemper, and Bordetella."
         },
         {
             title: "Bloodwork",
-            icon: icon4,
+            icon: icon5,
             description: "Bloodwork is an important part of pet wellness care. It can help our veterinarians identify health problems early. We offer bloodwork services at our vet center."
-        },
+        }
     ]
 
     return (
@@ -190,7 +190,7 @@ const HowWeHelp = () => {
 
                 <div className={S.sliderContent}>
                     <Swiper
-                        ref={swiperRef}
+                        ref={swiperRef2}
                         slidesPerView={4}
                         slidesPerGroup={4}
                         loop={false}
@@ -247,8 +247,8 @@ const HowWeHelp = () => {
 
                     </Swiper>
                     <div className={S.testimonialsBtn}>
-                        <button className={S.prev} onClick={() => swiperRef.current.swiper.slidePrev()} ><BsArrowLeftCircle /></button>
-                        <button className={S.next} onClick={() => swiperRef.current.swiper.slideNext()}><BsArrowRightCircle /></button>
+                        <button className={S.prev} onClick={() => swiperRef2.current.swiper.slidePrev()} ><BsArrowLeftCircle /></button>
+                        <button className={S.next} onClick={() => swiperRef2.current.swiper.slideNext()}><BsArrowRightCircle /></button>
                     </div>
                 </div>
             </div>

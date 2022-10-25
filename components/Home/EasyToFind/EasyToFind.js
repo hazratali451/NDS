@@ -21,7 +21,7 @@ const EasyToFind = () => {
         <div id={S.easyToFind}>
             <div className="container-fluid p-0 overflow-hidden">
                 <div className={`${S.title} d-flex justify-content-center flex-column`}>
-                    <h2 className="title text-center">Our Clients Love Us</h2>
+                    <h2 className="title text-center">We Are Easy to Find</h2>
                     <Image src={deviceWidth && deviceWidth < "767" ? underTitleMobile : underTitle} alt="" />
                     <p className='text-center'>Our clinic is conveniently located near you</p>
                 </div>

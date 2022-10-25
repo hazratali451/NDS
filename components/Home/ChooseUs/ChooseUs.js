@@ -5,6 +5,8 @@ import BgImage from '/public/img/Home/dog-cat-bg.webp'
 import TitleBtm from '/public/img/under-title.svg'
 import icon1 from '/public/img/Home/icons/Icon1.svg'
 import icon2 from '/public/img/Home/icons/Icon2.svg'
+import icon3 from '/public/img/Home/icons/Icon3.svg'
+import icon4 from '/public/img/Home/icons/Icon4.svg'
 import TitleBtmMobile from '/public/img/under-title-mobile.svg'
 
 const ChooseUs = () => {
@@ -32,13 +34,13 @@ const ChooseUs = () => {
         },
         {
             title: "Hablamos Español",
-            icon: icon2,
+            icon: icon3,
             content: "Nosotros nos comunicamos en el idioma de nuestra comunidad.",
             list: false
         },
         {
             title: "We Care",
-            icon: icon2,
+            icon: icon4,
             content: "We believe in quality animal health care personalized to your pet's needs.",
             list: false
         },

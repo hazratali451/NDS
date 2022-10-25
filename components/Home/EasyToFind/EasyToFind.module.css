@@ -48,3 +48,7 @@
 .wrapper span {
     display: block !important;
 }
+
+.asff {
+    flex-basis: 50%;
+}

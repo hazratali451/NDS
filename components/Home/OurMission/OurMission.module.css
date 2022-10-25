@@ -21,6 +21,11 @@
     max-width: 90%;
 }
 
+@media (max-width:1399px) {
+    #OurMission {
+        background-size: contain;
+    }
+}
 
 @media (max-width:1199px) {
     .content {

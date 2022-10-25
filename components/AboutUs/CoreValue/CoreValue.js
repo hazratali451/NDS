@@ -39,7 +39,7 @@ const CoreValue = () => {
         <section id={S.core_value}>
             <div className={`container ${S.container}`}>
                 <div className={`d-flex flex-column justify-content-center text-center ${S.title_wrapper}`}>
-                    <h2 className={`title`}>Meet Our Team</h2>
+                    <h2 className={`title`}>Our Core Value</h2>
                     <div><Image className={S.under_title} src={deviceWidth && deviceWidth < "767" ? underTitleMobile : underTitle} alt="" /></div>
                 </div>
                 <div className="d-flex justify-content-center align-items-center">
