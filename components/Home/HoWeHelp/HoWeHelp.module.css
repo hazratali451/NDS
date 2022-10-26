@@ -1,124 +1,118 @@
 #HowWeHelp {
-    background-image: url(../../../public/img/Home/how-we-hel-bg.svg);
-    background-repeat: no-repeat;
+	background: url(../../../public/img/Home/how-we-hel-bg.svg) #eef6ff no-repeat
+		bottom center / contain;
 }
-
 .container {
-    padding-top: 120px;
-    padding-bottom: 120px;
+	padding-top: 120px;
+	padding-bottom: 120px;
 }
 
 .content {
-    text-align: center;
-    max-width: 950px;
-    margin-bottom: 40px;
+	text-align: center;
+	max-width: 950px;
+	margin-bottom: 40px;
 }
 
-.static>div {
-    gap: 30px;
+.static > div {
+	gap: 30px;
 }
 
 .boxWrapper {
-    background-color: #FAFAFA;
-    padding-top: 20px;
-    padding-bottom: 26px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    transition: all ease .3s;
-    text-align: center;
+	background-color: #fafafa;
+	padding-top: 20px;
+	padding-bottom: 26px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	transition: all ease 0.3s;
+	text-align: center;
 }
 
 .boxWrapper h3 {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 30px;
-    color: var(--color-black);
-    margin-top: 15px;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 30px;
+	color: var(--color-black);
+	margin-top: 15px;
 }
 
 .boxWrapper img {
-    padding-right: 58px !important;
-    padding-left: 58px !important;
+	padding-right: 58px !important;
+	padding-left: 58px !important;
 }
 
 .button {
-    margin-top: 28px;
+	margin-top: 28px;
 }
 
 .button button {
-    padding: 18.5px 52.5px;
+	padding: 18.5px 52.5px;
 }
 
 .boxWrapper:hover {
-    background-color: var(--color-secondary);
+	background-color: var(--color-secondary);
 }
 
+@media (max-width: 1199px) {
+	.static > div {
+		gap: 15px;
+	}
 
+	.boxWrapper {
+		padding-top: 15px;
+		padding-bottom: 17px;
+	}
 
-
-@media (max-width:1199px) {
-    .static>div {
-        gap: 15px;
-    }
-
-    .boxWrapper {
-        padding-top: 15px;
-        padding-bottom: 17px;
-    }
-
-    .container {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
+	.container {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
 }
 
-@media (max-width:991px) {
-    .content {
-        max-width: unset;
-        margin-bottom: 0px;
-        font-size: 22px;
-        line-height: 30px;
-    }
+@media (max-width: 991px) {
+	.content {
+		max-width: unset;
+		margin-bottom: 0px;
+		font-size: 22px;
+		line-height: 30px;
+	}
 
-    #HowWeHelp {
-        overflow-x: hidden;
-    }
+	#HowWeHelp {
+		overflow-x: hidden;
+	}
 
-    .button {
-        margin-top: 0px;
-    }
+	.button {
+		margin-top: 0px;
+	}
 
-    .boxWrapper h3 {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 30px;
-        margin-top: 10px;
-    }
-
-
+	.boxWrapper h3 {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 30px;
+		margin-top: 10px;
+	}
 }
 
-@media (max-width:776px) {
-    .container {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
+@media (max-width: 776px) {
+	.container {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
 
-    .content {
-        padding-right: 16px;
-        padding-left: 16px;
-    }
+	.content {
+		padding-right: 16px;
+		padding-left: 16px;
+	}
 
-    #HowWeHelp {
-        background-image: url(../../../public/img/Home/how-we-hel-bg-mobile.png);
-        background-size: cover;
-    }
+	#HowWeHelp {
+		background-image: url(../../../public/img/Home/how-we-hel-bg-mobile.png);
+		background-size: cover;
+	}
 
-    .button button {
-        padding: 18.5px 77px;
-    }
+	.button button {
+		padding: 18.5px 77px;
+	}
 }
