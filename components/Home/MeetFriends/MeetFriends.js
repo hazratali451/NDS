@@ -1,25 +1,39 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import React, { useCallback, useEffect, useState } from "react";
-import Carousel, { Modal, ModalGateway } from "react-images";
-import Gallery from "react-photo-gallery";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import Styles from "./MeetFriends.module.css";
+import author from "/public/img/author.svg";
 import GellaryImage1 from "/public/img/Home/Gellary/Img 3.jpg";
 import GellaryImage2 from "/public/img/Home/Gellary/Img-2.png";
 import GellaryImage3 from "/public/img/Home/Gellary/Img-3.png";
 import GellaryImage4 from "/public/img/Home/Gellary/Img-4.png";
 import GellaryImage5 from "/public/img/Home/Gellary/Img-5.png";
 import GellaryImage6 from "/public/img/Home/Gellary/Img-6.png";
+import shapes from "/public/img/shapes.svg";
 import underTitleMobile from "/public/img/under-title-mobile.svg";
 import underTitle from "/public/img/under-title.svg";
 
 const MeetFriends = () => {
 	const data = [
-		GellaryImage1,
-		GellaryImage2,
-		GellaryImage3,
-		GellaryImage4,
-		GellaryImage5,
-		GellaryImage6,
+		{
+			img: GellaryImage1,
+		},
+		{
+			img: GellaryImage2,
+		},
+		{
+			img: GellaryImage3,
+		},
+		{
+			img: GellaryImage4,
+		},
+		{
+			img: GellaryImage5,
+		},
+		{
+			img: GellaryImage6,
+		},
 	];
 
 	const [currentImage, setCurrentImage] = useState(0);
@@ -66,34 +80,49 @@ const MeetFriends = () => {
 				</div>
 
 				<div id={Styles.ajksfhdasf}>
-					<Gallery
-						columns={deviceWidth && deviceWidth < 767 ? 2 : 3}
-						direction={"column"}
-						margin={
-							deviceWidth && deviceWidth < 1100
-								? 7
-								: deviceWidth && deviceWidth < 767
-								? 4
-								: 15
-						}
-						photos={data}
-						onClick={openLightbox}
-					/>
-					<div className={Styles.firendsOverlay}></div>
-					<ModalGateway>
-						{viewerIsOpen ? (
-							<Modal onClose={closeLightbox}>
-								<Carousel
-									currentIndex={currentImage}
-									views={data.map((x) => ({
-										...x,
-										srcset: x.srcSet,
-										caption: x.title,
-									}))}
-								/>
-							</Modal>
-						) : null}
-					</ModalGateway>
+					<ResponsiveMasonry
+						columnsCountBreakPoints={{ 350: 1, 768: 2, 1200: 3 }}
+					>
+						<Masonry gutter="24px">
+							{data.map(({ img }, i) => (
+								<div
+									className={`position-relative ${Styles.item}`}
+									key={i}
+								>
+									<Image
+										style={{ width: `100%`, objectFit: `cover` }}
+										src={img}
+										alt=""
+									/>
+									<div className={Styles.hoverContent}>
+										<div>
+											<h4 className={Styles.title}>
+												Enjoying With My Pet
+											</h4>
+											<img src={shapes.src} alt="" />
+											<p className={Styles.txt}>
+												Lorem Ipsum is simply dummy text of the
+												printing and typesetting industry.Lorem
+												Ipsum has been the industry's standard dummy
+												text ever since the 1500s.
+											</p>
+											<div className={Styles.author}>
+												<img
+													className={Styles.authorImage}
+													src={author.src}
+													alt=""
+												/>
+												<div className="info">
+													<h6>Jane Cooper</h6>
+													<span>Business Man</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							))}
+						</Masonry>
+					</ResponsiveMasonry>
 				</div>
 			</div>
 		</section>
