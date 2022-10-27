@@ -94,8 +94,9 @@
 }
 .paws {
 	position: absolute;
-	left: calc(50% + 220px);
-	top: 0;
+	left: calc(50% + 550px);
+	top: -150px;
+	max-width: 450px;
 }
 .bannerWrapper {
 	position: relative;
