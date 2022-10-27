@@ -31,8 +31,8 @@ const Banner = () => {
 
 			<div className={S.bannerWrapper}>
 				<div className={`container ${S.container}`}>
-					<div className="row align-items-center">
-						<div className="col">
+					<div className="row justify-content-center align-items-center">
+						<div className="col-10 col-sm-6">
 							<Image src={Dog} alt="Dog" />
 						</div>
 						<div className="col text-center text-md-start">
