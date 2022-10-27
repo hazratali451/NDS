@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import S from "./EasyToFind.module.css";
-import DogAndText from "/public/img/Home/Dog-and-ext.svg";
+import dog from "/public/img/dog.svg";
 import underTitleMobile from "/public/img/under-title-mobile.svg";
 import underTitle from "/public/img/under-title.svg";
 
@@ -33,15 +33,19 @@ const EasyToFind = () => {
 					</p>
 				</div>
 				<div className={S.wrapper}>
-					<div className={S.pointer}>
-						<Link href="/">
-							<Image src={DogAndText} alt="" />
-						</Link>
+					<div className={S.sideImage}>
+						<div className="mx-auto">
+							<Image src={dog} alt="" />
+						</div>
+						<div className={S.info}>
+							<h6>Come Visit Us Today, We are Here to Serve You</h6>
+							<Link href="/">Schedule a Visit</Link>
+						</div>
 					</div>
 					<div className={S.pointer}>
 						{/* <Image src={Map} alt="" /> */}
 						<div className={S.gmap_iframe}>
-							<div className="gmap_canvas">
+							<div className={S.gmap_canvas}>
 								<iframe
 									frameborder="0"
 									scrolling="no"
