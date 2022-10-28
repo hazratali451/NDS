@@ -98,22 +98,16 @@
 	top: -150px;
 	max-width: 450px;
 }
+.paw_2 {
+	right: calc(50% - 140px);
+	position: absolute;
+	top: 500px;
+}
 .bannerWrapper {
 	position: relative;
 	overflow: hidden;
 }
-@media (max-width: 1880px) {
-	.leaf_1 {
-		/* width: 200px; */
-	}
-	.bannerWrapper {
-		/* padding-top: 60px; */
-	}
-}
 @media (max-width: 1199px) {
-	.leaf_1 {
-		/* width: 200px; */
-	}
 	.dog_1 {
 		width: 220px;
 		height: unset;
@@ -122,11 +116,21 @@
 		padding-bottom: 140px;
 		padding-top: 60px;
 	}
+	.paw_2 {
+		top: unset;
+		bottom: 0;
+		height: unset;
+		width: 400px;
+	}
 }
 @media (max-width: 991px) {
 	.paws {
 		left: calc(50% + 20px);
 		top: -160px;
+	}
+	.paw_2 {
+		width: 300px;
+		right: 50%;
 	}
 }
 @media (max-width: 640px) {

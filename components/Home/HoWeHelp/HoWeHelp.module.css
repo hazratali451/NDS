@@ -45,11 +45,15 @@
 }
 
 .button {
-	margin-top: 28px;
+	margin-top: 58px;
 }
 
-.button button {
-	padding: 18.5px 52.5px;
+.button a {
+	padding: 14.5px 52.5px;
+}
+
+.button a:hover {
+	color: #fff;
 }
 
 .boxWrapper:hover {
@@ -112,7 +116,7 @@
 		background-size: cover;
 	}
 
-	.button button {
+	.button a {
 		padding: 18.5px 77px;
 	}
 }

@@ -147,8 +147,17 @@
 }
 .paws {
 	position: absolute;
-	left: calc(50% + 220px);
+	right: 0;
 	top: 0;
+	height: unset;
+	max-width: 300px;
+}
+.paws_2 {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: unset;
+	max-width: 600px;
 }
 #Testimonials {
 	position: relative;
@@ -161,6 +170,11 @@
 	}
 	#Testimonials .container {
 		padding-top: 60px;
+	}
+	.paws_2 {
+		height: unset;
+		width: 40%;
+		max-width: 600px;
 	}
 }
 @media (max-width: 1199px) {
@@ -179,9 +193,7 @@
 }
 @media (max-width: 991px) {
 	.paws {
-		left: calc(50% + 20px);
-		top: -160px;
-		opacity: 0.4;
+		width: 200px;
 	}
 	.leaf_1 {
 		width: 190px;
@@ -200,7 +212,7 @@
 		padding-top: 130px;
 	}
 	.paws {
-		max-width: 400px;
-		top: -240px;
+		max-width: 150px;
+		top: 0;
 	}
 }
