@@ -6,7 +6,7 @@
 
 .container {
 	padding-top: 120px;
-	padding-bottom: 120px;
+	padding-bottom: 30px;
 }
 
 .single_wrapper {
@@ -68,5 +68,22 @@
 
 	.row {
 		padding-top: 20px;
+	}
+}
+.dog_1 {
+	margin-top: -100px;
+}
+
+@media (max-width: 1500px) {
+	.dog_1 {
+		margin-top: 0;
+		width: 160px;
+		height: unset;
+	}
+}
+@media (max-width: 767px) {
+	.dog_1 {
+		width: 160px;
+		height: unset;
 	}
 }

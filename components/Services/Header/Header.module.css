@@ -140,12 +140,40 @@
 }
 .paws {
 	position: absolute;
-	left: calc(50% + 220px);
+	/* left: calc(50% + 220px); */
 	top: 0;
+	right: 0;
+	height: unset;
 }
 #Header {
 	position: relative;
 	overflow: hidden;
+}
+@media (min-width: 1200px) {
+	.paws {
+		top: 0;
+		right: 0;
+	}
+}
+@media (max-width: 1600px) {
+	.paws {
+		max-width: 900px;
+	}
+}
+@media (max-width: 1500px) {
+	.paws {
+		max-width: 860px;
+	}
+}
+@media (max-width: 1399px) {
+	.paws {
+		max-width: 750px;
+	}
+}
+@media (max-width: 1280px) {
+	.paws {
+		max-width: 700px;
+	}
 }
 @media (max-width: 1880px) {
 	.leaf_1 {
@@ -172,6 +200,8 @@
 	.paws {
 		left: calc(50% + 20px);
 		top: -160px;
+		right: unset;
+		/* left: calc(50% + 220px); */
 	}
 }
 @media (max-width: 640px) {
@@ -184,6 +214,13 @@
 	}
 	.paws {
 		max-width: 400px;
-		top: -240px;
+		top: -160px;
+		height: unset;
+		width: unset;
+	}
+}
+@media (min-width: 1200px) and (max-width: 1500px) {
+	.title {
+		font-size: 45px;
 	}
 }
