@@ -36,7 +36,7 @@ export default function Home() {
         <OurMission />
         <MeetFriends />
         <Testimonials />
-        <EasyToFind />
+        <EasyToFind setModalShow={setModalShow} />
       </main>
       <footer>
         <Footer />

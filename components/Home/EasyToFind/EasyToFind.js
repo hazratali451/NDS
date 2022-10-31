@@ -6,7 +6,7 @@ import dog from "/public/img/dog.svg";
 import underTitleMobile from "/public/img/under-title-mobile.svg";
 import underTitle from "/public/img/under-title.svg";
 
-const EasyToFind = () => {
+const EasyToFind = ({ setModalShow }) => {
 	const [deviceWidth, setDeviceWidth] = useState();
 
 	useEffect(() => {
@@ -39,7 +39,7 @@ const EasyToFind = () => {
 						</div>
 						<div className={S.info}>
 							<h6>Come Visit Us Today, We are Here to Serve You</h6>
-							<Link href="/">Schedule a Visit</Link>
+							<button onClick={setModalShow}>Schedule a Visit</button>
 						</div>
 					</div>
 					<div className={S.pointer}>
